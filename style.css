@@ -5,162 +5,122 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    padding: 0 15px;
+    padding: 20px;
 }
 
-header {
+/* Main Resume Container */
+.resume-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Left and Right Sections */
+.left-section, .right-section {
+    padding: 20px;
+    width: 50%;
+}
+
+/* Left Section Styles */
+.left-section {
     background-color: #2c3e50;
     color: white;
-    flex-direction: column;
+    border-radius: 10px 0 0 10px;
 }
 
+/* Profile Info Styles */
 .profile-info {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 30px;
-}
-
-header img {
-    width: 150px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-header .info {
-    text-align: left;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.1em;
-    font-weight: 300;
-}
-
-/* Main Container */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-/* Section Title */
-.section-title {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: #2c3e50;
+    flex-direction: column;
     text-align: center;
-    position: relative;
-    padding-bottom: 10px;
 }
 
-.section-title:after {
-    content: '';
-    width: 60px;
-    height: 3px;
-    background-color: #2c3e50;
-    display: block;
-    margin: 10px auto 0;
-}
-
-section {
-    margin-bottom: 50px;
-}
-
-section p, section ul li {
+.profile-info img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
     margin-bottom: 15px;
-    text-align: left;
-    font-size: 1.1em;
 }
 
+.profile-info h1 {
+    font-size: 2em;
+}
+
+.profile-info p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Personal Info, Skills, Languages */
 .personal-info ul, .skills ul, .languages ul {
     list-style: none;
     padding: 0;
 }
 
-.personal-info ul li span {
-    font-weight: bold;
-}
-
-.skills ul, .languages ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.personal-info ul li, .skills ul li, .languages ul li {
+    margin: 10px 0;
 }
 
 .skills ul li, .languages ul li {
-    background-color: #2c3e50;
-    color: white;
-    margin: 5px;
-    padding: 10px 15px;
+    background-color: white;
+    color: #2c3e50;
+    padding: 8px 15px;
     border-radius: 20px;
-    font-size: 1em;
+    display: inline-block;
+    margin-right: 10px;
 }
 
-/* Footer Section */
+/* Right Section Styles */
+.right-section {
+    background-color: #fff;
+    color: #333;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Experience, Education, About Sections */
+.right-section section {
+    margin-bottom: 20px;
+}
+
+.about p, .education p, .experience p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #2c3e50;
     color: white;
-    margin-top: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p {
-        font-size: 1em;
-    }
-
-    .profile-info {
+    .resume-container {
         flex-direction: column;
-        text-align: center;
     }
 
-    .skills ul, .languages ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills ul li, .languages ul li {
-        width: auto;
-        padding: 8px 12px;
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 480px) {
-    header img {
-        width: 100px;
-        height: 130px;
-    }
-
-    .container {
-        padding: 20px;
-    }
-
-    .section-title {
-        font-size: 1.5em;
+    .left-section, .right-section {
+        width: 100%;
+        border-radius: 10px;
     }
 }
