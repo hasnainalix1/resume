@@ -51,14 +51,14 @@ body {
 
 .profile-info img {
     width: 120px;
-    height: 140px;
+    height: 150px;
     border-radius: 20px;
     margin-bottom: 15px;
 }
 
 .profile-info h1 {
     font-size: 1.8em;
-    margin-top: 35px;
+    margin-top: 40px;
     margin-left: 15px;
 }
 
