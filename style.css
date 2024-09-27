@@ -79,6 +79,7 @@ body {
 .personal-info ul, .skills ul, .languages ul {
     list-style: none;
     padding: 0;
+    padding-bottom: 15px;
 }
 
 .personal-info ul li, .skills ul li, .languages ul li {
