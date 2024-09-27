@@ -59,6 +59,7 @@ body {
 .profile-info h1 {
     font-size: 1.8em;
     margin-top: 15px;
+    margin-left: 15px;
 }
 
 .profile-info p {
