@@ -81,6 +81,9 @@ body {
     padding: 0;
     padding-bottom: 15px;
 }
+.personal-info, .skills, .languages {
+    padding-bottom: 20px;
+}
 
 .personal-info ul li, .skills ul li, .languages ul li {
     margin-bottom: 10px;
